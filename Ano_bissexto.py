@@ -1,0 +1,10 @@
+a = int(input('Digite o ano: '))
+b = int(input('Digite outro ano: '))
+ano = 0
+cont = 0
+
+for i in range(a, b + 1):
+    if (i % 100 and i % 400 == 0)or (i % 4 == 0):
+        ano = i + 1
+        cont = cont + 1
+        print(i)
