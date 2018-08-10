@@ -1,0 +1,12 @@
+pessoas = 0
+novo_peso= -1
+soma_de_pesos = 0
+while(novo_peso != 0 and pessoas < 7 and soma_de_pesos < 560):
+    pessoas = pessoas + 1
+    novo_peso = int(input('Digite peso: '))
+    soma_de_pesos = soma_pesos + novo_peso
+if soma_de_pesos > 560:
+    soma_de_pesos = soma_de_pesos - novo_peso
+    pessoas = pessoas - 1
+print('Peso é de {}'.format(soma_de_pesos))
+print('total de pessoas = {}'.format(pessoas))
