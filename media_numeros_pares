@@ -1,0 +1,12 @@
+numero = input('digite os números: '))
+lista = []
+aux = 0
+cont = 0
+for i in numero:
+    lista.append(int(i))
+    for i in lista:
+      if (i % 2 == 0 and i > 0):
+        aux = aux + i
+        cont = cont+ 1
+        media = aux/cont
+print(media)
